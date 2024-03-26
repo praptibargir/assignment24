@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 24</title>
+</head>
+<body>
+    <h1>Calculate Area of Circle</h1>
+    <script>
+        //Area of circle
+        function calculateArea(radius){
+            console.log("Calculating the area of circle.");
+            console.log(`The radius is ${radius}.`);
+            const area=3.14*radius*radius;
+            console.log(`The area of circle is ${area}`);
+        }
+        calculateArea(5);
+
+        //Type 1: No Argument No Return
+        function noArgumentNoReturn(){
+            console.log("This No Argument No Return type.");
+        }
+        noArgumentNoReturn();
+
+        //Type 2: Argument But No Return
+        function argumentNoReturn(name){
+            console.log("This Argument But No Return type.");
+            console.log(`Hello ${name}`);
+        }
+        argumentNoReturn("Prapti");
+
+        //Type 3: No Argument but Return
+        function noArgumentReturn(){
+            console.log("This No Argument But Return type.");
+            const name1="Prapti";
+            return name1;
+        }
+        const result1=noArgumentReturn();
+        console.log(result1);
+
+        //Type 4: Argument With Return
+        function argumentReturn(a,b){
+            console.log("This Argument With Return type.");
+            return a+b;
+        }
+        const result2=argumentReturn(2,4);
+        console.log(`The addition is ${result2}.`);
+
+
+    </script>
+</body>
+</html>
